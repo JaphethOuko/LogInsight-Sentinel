@@ -12,11 +12,11 @@ jobs:
 
     steps:
       # Step 1: 'checkout' pulls your code from the repository onto the cloud server.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       # Step 2: This installs Python on the cloud server so it can run your script.
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: "3.10"
 
