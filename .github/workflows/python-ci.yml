@@ -1,0 +1,26 @@
+# This is a GitHub Actions workflow file.
+# It automates the "Continuous Integration" (CI) part of DevOps.
+name: Python Project CI
+
+# 'on: [push]' means this script runs automatically every time you upload code to GitHub.
+on: [push]
+
+jobs:
+  build:
+    # This tells GitHub to run your code on a fresh Linux (Ubuntu) server in the cloud.
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: 'checkout' pulls your code from the repository onto the cloud server.
+      - uses: actions/checkout@v4
+
+      # Step 2: This installs Python on the cloud server so it can run your script.
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      # Step 3: This checks your Python file (monitor.py) for any typing or syntax errors.
+      # In a DevOps interview, you can call this the "Linting" or "Syntax Validation" phase.
+      - name: Run Syntax Check
+        run: python -m py_compile monitor.py
