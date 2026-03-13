@@ -9,6 +9,8 @@ jobs:
   build:
     # This tells GitHub to run your code on a fresh Linux (Ubuntu) server in the cloud.
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       # Step 1: 'checkout' pulls your code from the repository onto the cloud server.
