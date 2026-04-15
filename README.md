@@ -2,7 +2,7 @@ DevOps Monitoring & Automation Suite
 
 📌 Project Overview
 
-This repository contains a suite of Python-based utilities designed to demonstrate core DevOps principles: Monitoring, Automation, and Containerization. These projects were developed to showcase technical readiness for the FHLBank Pittsburgh IT DevOps Internship.
+This repository contains a suite of Python-based utilities designed to demonstrate core DevOps principles: Monitoring, Automation, and Containerization. 
 
 🛠 Project Components
 
